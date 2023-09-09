@@ -6,12 +6,14 @@
  * Description: Write a program that prints the alphabet in lowercase, followed by a new line.
  * Return: 0
  */
-int main() {
+int main()
+{
     char ch;
 
    
 
-    for (ch = 'a'; ch <= 'z'; ch++) {
+    for (ch = 'a'; ch <= 'z'; ch++)
+    {
        putchar(ch);
     }
 
