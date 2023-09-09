@@ -12,9 +12,9 @@ int main() {
    
 
     for (ch = 'a'; ch <= 'z'; ch++) {
-       putchar("%c ", ch);
+       putchar(ch);
     }
 
-    putchar("\n");
+    putchar('\n');
     return (0);
 }
