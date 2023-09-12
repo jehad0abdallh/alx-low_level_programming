@@ -1,6 +1,6 @@
 #include "main.h"
-/*
- *add - function that adds two integers and returns the result.
+/**
+ *add - sums up two numbers
  *@n1: first integer
  *@n2: secand integer
  *Return: return 0
