@@ -12,6 +12,6 @@ re = i % 10;
 if (re < 0)
 re *= -1;
 
-_putchar(re+'0');
-return re;
+_putchar(re + '0');
+return (re);
 }
