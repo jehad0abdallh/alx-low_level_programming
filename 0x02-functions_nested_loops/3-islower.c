@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_islower : controls if a character is in lowercase
+*desc:_islower  controls if a character is in lowercase
 *@c: character to function input
 *Return: return 0 or 1
 */
