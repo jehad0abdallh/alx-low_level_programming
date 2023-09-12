@@ -11,7 +11,7 @@ int re;
 re = i % 10;
 if (re < 0)
 {
-re* = -1;
+re *= -1;
 return re;
 }
 return re;
