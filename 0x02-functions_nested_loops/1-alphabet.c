@@ -1,16 +1,19 @@
 #include "main.h"
 /**
- * main - main block
- * Return: 0
+ * Print_alphapet
+ * Description:function that print alphabet in lowercas
+ * Retutrn : no returtn
  */
 void print_alphabet(void)
 {
 	char c;
-	for (c ='a' ;c < 'z';c++)
+
+	for (c = 'a' ; c <= 'z' ; c++)
 	{
 		_putchar (c);
 	}
-	_putchar('z');
+
+	_putchar(10);
 
 
 }
