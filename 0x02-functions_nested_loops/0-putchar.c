@@ -1,19 +1,19 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main - main block
- * Description:prints _putchar, followed by a new line.
- * Return: 0
- */
+*main - function prints text as output
+*
+*Return:return 0
+*/
 int main(void)
-{	
-	char alx[10] = "_putchar";
+{
+	char school[10] = "_putchar";
 
 	int i;
 
 	for (i = 0; i < 8; i++)
 	{
-		_putchar(alx[i]);
+		_putchar(school[i]);
 	}
 	_putchar(10);
 	return (0);
