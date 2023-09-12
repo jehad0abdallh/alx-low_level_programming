@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_sign description:  prints sign of a the number
+*print_sign-prints sign of a numbe
 *@num: character to be verified
 *Return: return 0 or 1
 */
