@@ -1,29 +1,32 @@
-#include"main.h"
+#include "main.h"
 /**
- *rot13 - a function that encodes a string using rot13.
- *@s: string to be crypted .
- *Return: pointer to s .
+ * *rot13 - function that encodes a string using rot13.
+ * @s: pointer pointed to the variable s , of type character
+ * Return: Pointer P , pointed to the variable s of type char.
+ * Update V2.0 : using Pointers instead of arrays to minimize the use
+ * of allocated memory and to improve the esthetic and simplicity of the code.
  */
-
 char *rot13(char *s)
 {
-	int i;
+int i;
+char *p = s;
 
-	char *rol13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char *ROL13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	char *ptr = s;
+char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char *code = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*s)
+while (*s != '\0')
+{
+	i = 0;
+	while (i < 53)
 	{
-		for (i = 0; i <= 52; i++)
-		{
-			if (*s == rol13[i])
-			{
-				*s = ROL13[i];
+		if (*s == original[i])
+	{
+			*s = code[i];
 				break;
-			}
-		}
+	}
+		i++;
+	}
 		s++;
 	}
-	return (ptr);
+return (p);
 }
