@@ -1,24 +1,32 @@
-#include "main.h"
+#include"main.h"
 /**
- * leet - function
- * @str: Pointer
- * Return: poniter return to function.
+ *leet - a function that encodes a string into 1337.
+ *@s: string to be crypted .
+ *Return: pointer to s .
+ *Update V 1.0 : In this new code , i changed 2 arrays with 2 pointers, that
+ *are pointed to the BASS adresses of the 2 arrays.
+ *in addition to that , i assigned a pointer p to s.
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-	char *cp = str;
-	char symb[] = {'a', 'e', 'o', 't', 'i'};
-	int rep[] = {4, 3, 0, 7, 1};
-	unsigned int i, j;
+	char *m = "aeotl";
+	char *M = "AEOTL";
+	int x[] = {'4', '3', '0', '7', '1'};
+	int i;
+	char *p = s;
 
-	while (*str)
+	while (*s != '\0')
 	{
-		for (j = 0; j < sizeof(symb) / sizeof(char); j++)
-		{
-			if (*str == symb[j] || *str == symb[j] - 32)
-				*str = 48 + rep[j]
-		}
+
+	for (i = 0; i < 5; i++)
+	{
+		if (*s == *(m + i) || *s == *(M + i))
+
+			*s = x[i];
 	}
-	return (str);
+		s++;
+
+	}
+		return (p);
 }
