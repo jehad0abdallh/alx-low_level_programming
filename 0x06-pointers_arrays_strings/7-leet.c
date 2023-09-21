@@ -7,9 +7,10 @@
 
 char *leet(char *str)
 {
+	char *cp = str;
 	char symb[] = {'a', 'e', 'o', 't', 'i'};
 	int rep[] = {4, 3, 0, 7, 1};
-	int i, j;
+	unsigned int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
