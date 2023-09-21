@@ -7,7 +7,6 @@
 
 char *leet(char *str)
 {
-	char *cp = str;
 	char symb[] = {'a', 'e', 'o', 't', 'i'};
 	int rep[] = {4, 3, 0, 7, 1};
 	unsigned int i, j;
