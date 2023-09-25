@@ -2,8 +2,8 @@
 /**
  *_memcpy -  replace part of sting by string
  *@dest: string pointer.
- *src: constent sting.
- *n: string lingth.
+ *@src: constent sting.
+ *@n: string lingth.
  *Return: pointer to char.
  */
 
