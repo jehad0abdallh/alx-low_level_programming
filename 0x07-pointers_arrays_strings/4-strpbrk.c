@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- *_strbrk - function that searches a string for any of a set of bytes.
+ *_strpbrk - function that searches a string for any of a set of bytes.
  *@s: string pointer.
  *@accept: function that gets the length of a prefix substring.
  *Return: pointer for string.
