@@ -1,9 +1,9 @@
 #include"main.h"
 /**
- *_memset -  function fills the first n bytes of the memory area pointed to by s with the constant byte b
+ *_memset -  function fill replace string wth characte
  *@s: string pointer.
- *b: constent byte b.
- *n: string lingth.
+ *@b: constent byte b.
+ *@n: string lingth.
  *Return: pointer to char.
  */
 
