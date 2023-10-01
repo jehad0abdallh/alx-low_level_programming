@@ -11,7 +11,8 @@ int sqrt(int a, int b)
 		return (b);
 	else if (b * b > a)
 		return (-1);
-	return (sqrt(a, b + 1));
+	else
+		return (sqrt(a, b + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of n
