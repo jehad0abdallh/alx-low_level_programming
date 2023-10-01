@@ -1,4 +1,4 @@
-}#include "main.h"
+#include "main.h"
 /**
  * sqrt - root sqrt
  * @a: same number as n
