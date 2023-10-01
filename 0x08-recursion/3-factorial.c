@@ -1,7 +1,7 @@
 
 #include "main.h"
 /**
- * fectorial - function for print reverse char
+ * factorial - function for print reverse char
  * @n: int for number
  * Return: integer
  */
@@ -16,6 +16,6 @@ int factorial(int n)
 	{
 		return (1);
 	}
-	return(n * factorial(n - 1));
+	return (n * factorial(n - 1));
 }
 
