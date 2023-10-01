@@ -13,7 +13,6 @@ int sqrtt(int a, int b)
 		return (sqrtt(a, b + 1));
 	else
 		return (-1);
-	
 }
 /**
  * _sqrt_recursion - returns the natural square root of n
