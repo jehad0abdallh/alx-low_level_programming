@@ -1,0 +1,24 @@
+#include "main.h"
+/**
+ *_pow_recursion - function for print reverse char
+ * @x: int for number
+ * @y: int for power
+ * Return: integer
+ */
+
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else if (y == 0)
+	{
+		retrurn (1);
+	}
+	else if (y == 1)
+	{
+		retrurn (x);
+	}
+	return (x * _pow_recursion(x, y - 1));
+}
