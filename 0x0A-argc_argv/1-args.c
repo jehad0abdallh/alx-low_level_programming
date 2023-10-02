@@ -5,9 +5,9 @@
  * @argv: array of char of program token
  * Return: 0
  */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n", argv[0]);
+	printf("%s\n", argv[argc * 0]);
+
 	return (0);
 }
