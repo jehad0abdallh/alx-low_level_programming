@@ -1,11 +1,11 @@
 #include"main.h"
 /**
- * *creat_array -  creates an array of chars
+ * *create_array -  creates an array of chars
  * @size: size of array
  * @c: char to initialized
  * Return: pointer of array
  */
-char *creat_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *arr = malloc(size);
 
