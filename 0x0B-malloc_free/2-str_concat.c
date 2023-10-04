@@ -1,47 +1,68 @@
-#include"main.h"
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * gitlen - git kingth of string
- * @s - string pointer
- * Return: int
+ * _strlen - return length of a string
+ *
+ * @s: char type
+ * Return:  length of string
  */
-int gitlen(char *s)
+int _strlen(char *s)
 {
-	int i;
+	int a;
 
-	for (i = 0; s[i] !='0'; i++)
-		;
-	return (i);
+	for (a = 0; s[a] != '\0'; a++)
+	;
+	return (a);
 }
 /**
- * *str_concat - concat two string
- * @s1: string
- * @s2: string
- * Return: pointer
+ * _strncat - function to concatnate strings with n bytes
+ *
+ * @dest: destination for concatnation
+ * @src: source of string
+ * @n: int type for size of byte
+ * Return: dest
  */
+char *_strncat(char *dest, char *src, int n)
+{
+	int dest_len, a;
+
+	dest_len = _strlen(dest);
+	for (a = 0; a < n && src[a] != '\0'; a++)
+		dest[dest_len + a] = src[a];
+	return (dest);
+}
+
+/**
+ * *str_concat - function to allocate space for sting concatnation
+ * @s1: array pointer to destination of string
+ * @s2: array pointer to source of string
+ * Return: return pointer to copy of string
+ */
+
 char *str_concat(char *s1, char *s2)
 {
-	int i1, i2, j;
-	char *m;
+	char *ptr;
+	int size1, size2;
 
 	if (s1 == NULL)
-		s1 = '\0';
-	if (s2 == NULL)
-		s2 = '\0';
-
-	i1 = gitlen(s1);
-	i2 = gitlen(s2);
-	m = malloc((i1 + i2) * sizeof(char) + 1);
-
-	if (m == 0)
-		return (0);
-
-	for (j = 0; j <= i1 + i2; j++)
 	{
-		if (j < i1)
-			m[j] = s1[j];
-		else
-			m[j] = s2[j - i1];
+		s1 = "";
 	}
-	m[j] = '\0';
-	return (m);
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
+
+	ptr = malloc(((size1 + size2) + 1) * sizeof(char));
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	_strncat(ptr, s1, size1);
+	_strncat(ptr, s2, size2);
+	ptr += '\0';
+	return (ptr);
 }
