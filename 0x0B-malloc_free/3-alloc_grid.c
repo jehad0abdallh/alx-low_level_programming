@@ -5,11 +5,12 @@
  * alloc_grid - finction for two dimantinal arrey
  * @width: int
  * @height: int
- * Return: pointer of pointer of int 
+ * Return: pointer of pointer of int
  */
 int **alloc_grid(int width, int height)
 {
 	int **tab, i, j;
+
 	if (width <= 0 || height <= 0)
 	{
 		return  (NULL);
