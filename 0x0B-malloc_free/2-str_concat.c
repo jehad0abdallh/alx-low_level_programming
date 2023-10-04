@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 
 	i1 = gitlen(s1);
 	i2 = gitlen(s2);
-	m = malloc((i1 + i2) *sizeof(char) + 1);
+	m = malloc((i1 + i2) * sizeof(char) + 1);
 
 	if (m == 0)
 		return (0);
