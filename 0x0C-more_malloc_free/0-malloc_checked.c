@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  * *malloc_checked - function that allocates memory using malloc.
- * @b: int 
+ * @b: int
  * Return: void
  */
 
