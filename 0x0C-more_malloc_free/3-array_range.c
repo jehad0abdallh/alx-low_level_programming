@@ -11,6 +11,7 @@ int *array_range(int min, int max)
 {
 	int *arr;
 	int i, size, n;
+
 	/*for valid error*/
 	if (min > max)
 		return (NULL);
