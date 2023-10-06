@@ -1,54 +1,45 @@
-#include "main.h"
-#include <stdio.h>
-/*
- * strlen -  function calculat string len
- * @S: pointer of string
- * Return: int
- */
-int strlen(char *s)
-{
-	int i = 0;
+#include "main"
+#include <stdlib.h>
 
-	for (; s[i] != "\0"; i++)
-		;
-	return (i);
-}
-/*
- *string_nconcat - concatenates teo string with lin n
- *@s1: pointer string
- *@s2: pointer string two
- *@n: length of string
- *Return: new string
+/**
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * @s1: First string
+ * @s2: String to add to end of s1
+ * @n: Amount of s2 to add to s1
+ *
+ * Return: pointer to new area in memory, NULL if it fails
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *news;
-	unsigned int i, j, s1len, s2len;
+	char *nstr, *empt;
+	unsigned int i, len, j;
+	unsigned int size;
 
-	/*check if the string is OK*/
+	len = 0;
+	empt = "";
 	if (s1 == NULL)
-		s1 = "";
+		s1 = empt;
 	if (s2 == NULL)
-		s2 = "";
-	/*lenth*/
-	s1len = strlen(s1);
-	s2len = strlen(s2);
-	news = malloc(s1len + n + 1);
-	if (news == NULL)
-	{
+		s2 = empt;
+	while (s1[len] != '\0')
+		len++;
+	size = (len + n) * sizeof(*nstr);
+	nstr = malloc(size + 1);
+	if (nstr == NULL)
 		return (NULL);
-	}
-	/*copy*/
-	for (i = 0; s1[i] != "\0"; i++)
-		news[i] = s1[i];
-	for (j = 0; j < n; i++)
+	i = 0;
+	while (i < size && s1[i] != '\0')
 	{
-		news[i] = s2[j];
+		nstr[i] = s1[i];
 		i++;
 	}
-	
-	news[i] = "\0";
-	return (news);
+	j = 0;
+	while (i < size && s2[j] != '\0')
+	{
+		nstr[i] = s2[j];
+		i++;
+		j++;
+	}
+	nstr[i] = '\0';
+	return (nstr);
 }
-
-
