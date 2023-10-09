@@ -1,13 +1,12 @@
-#include "main"
-#include <stdlib.h>
-
+#include"main.h"
+#include<stdlib.h>
+#include<stdio.h>
 /**
- * string_nconcat - Concatenate two strings using n amount of s2
- * @s1: First string
- * @s2: String to add to end of s1
- * @n: Amount of s2 to add to s1
- *
- * Return: pointer to new area in memory, NULL if it fails
+ * string_nconcat - conctnat
+ * @s1: pointer
+ * @s2: string two
+ * @n: legnth
+ * Return: pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -23,6 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = empt;
 	while (s1[len] != '\0')
 		len++;
+	/**/
 	size = (len + n) * sizeof(*nstr);
 	nstr = malloc(size + 1);
 	if (nstr == NULL)
