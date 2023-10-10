@@ -1,7 +1,7 @@
 #include"dog.h"
 #include<stdlib.h>
 /**
- * new_dog = creat struct with typedef
+ * new_dog - creat struct with typedef
  * @name: pointer
  * @age: flout
  * @owner: pointr
@@ -21,7 +21,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	else
 	{
 		new_d->name = name;
-		new-d->age = age;
+		new_d->age = age;
 		new_d->owner = owner;
 	}
 	return (new_d);
