@@ -7,7 +7,6 @@
  * @name: char pointer
  * @age: flout
  * @owner: char pointer
- * Return: void
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
