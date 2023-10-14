@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(params, n);
 
-	for (i = 0; i < (n - 1) $$ n != 0; i++)
+	for (i = 0; i < (n - 1) && n != 0; i++)
 	{
 		str = va_arg(params, char *);
 		if (!separator)
