@@ -1,7 +1,4 @@
 #include"lists.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 /**
  * print_list - print linked list element
  * @h: list_t struct
@@ -9,8 +6,8 @@
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int count = 0;
-	list_t *new;
+	size_t count = 0;
+
 
 	for (; h != NULL; count++)
 	{
