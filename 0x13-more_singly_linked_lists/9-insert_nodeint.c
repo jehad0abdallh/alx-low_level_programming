@@ -1,4 +1,5 @@
 #include"lists.h"
+#include <string.h>
 /**
  * insert_nodeint_at_index - function to add node in index
  * @head: head ponter
@@ -8,7 +9,7 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	int i;
+	unsigned int i;
 	listint_t *cur, *last;
 
 	cur = malloc(sizeof(listint_t));
