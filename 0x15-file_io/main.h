@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <sys/types.h>
+/*#include <sys/types.h>*/
 /*for file*/
-#include <sys/stat.h>
+/*#include <sys/stat.h>*/
 /*for in/out file*/
 #include <fcntl.h>
 #include <unistd.h>
