@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * append_text_to_fil - appends text at the  end of file.
+ * append_text_to_file - appends text at the  end of file.
  * @filename: filename string
  * @text_content: text to append'
  * Return: 1 seccess -1 failed.
